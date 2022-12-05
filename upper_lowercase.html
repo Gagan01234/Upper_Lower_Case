@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>UpperCase and LowerCase</title>
+        <style>
+            body{
+                background-color: silver;
+            }
+            p{
+                font-size: 40px;
+                color:rgb(37, 45, 20);
+            }
+        </style>
+        <script tpye="text/javascript">
+            function lower()
+            {
+                var x=document.getElementById("fname").value;
+                document.getElementById("fname").value=x.toLowerCase();
+            }
+            function upper()
+            {
+                var y=document.getElementById("fname").value;
+                document.getElementById("fname").value=y.toUpperCase();
+            }
+        </script>
+    </head>
+    <body>
+        <p style="text-align:center"> Enter your name:</p>
+        <p style="text-align:center"><input type="text" style="font-size: 30px;"  id="fname"></p>
+        <p style="text-align:center"> <input type="button" style="font-size:30px" value="lower" id="low" onclick="lower()"> </p>
+        <p style="text-align:center"> <input type="button" style="font-size:30px" value="upper" id="up" onclick="upper()"></p>
+    </body>
+</html>
